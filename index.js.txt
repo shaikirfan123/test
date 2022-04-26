@@ -1,0 +1,12 @@
+
+function reset(){
+    panel1.classList.remove('active')
+    panel2.classList.remove('active')
+    panel3.classList.remove('active')
+    panel4.classList.remove('active')
+    panel5.classList.remove('active')
+}
+function selectpanel(panelno){
+     reset()
+     document.getElementById(panelno).classList.add('active')
+}

@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 100%;
+   
+}
+.panel{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 70ms ease-in;
+
+
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+}
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    left: 20px; ;
+    bottom:20px ;
+    margin: 0;
+    opacity: 0;
+
+}
+#panel1{
+    background-image: url("https://source.unsplash.com/1400x400/?code,technology");
+}
+#panel2{
+    background-image: url("https://source.unsplash.com/1400x400/?nature,technology");
+}
+#panel3{
+    background-image: url("https://source.unsplash.com/1400x400/?animals,technology");
+    
+}
+#panel4{
+    background-image: url("https://source.unsplash.com/1400x400/?artificial,technology");
+}
+#panel5{
+    background-image: url("https://source.unsplash.com/1400x400/?medicine,technology");
+}
